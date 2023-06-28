@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  .dialogs {
+    background-color: hsl(0, 0%, 0%);
+    height: 1000px;
+    width: 100%;
+    padding: 30px;
+    .link {
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 19px;
+      color: aqua;
+      padding: 10px 0;
+    }
+  }
+  .row {
+    padding: 30px 0 0 30px;
+    width: 100%;
+    textarea {
+      margin-top: 30px;
+      border: 2px solid black;
+    }
+    button {
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      border: 2px solid black;
+      padding: 6px 30px;
+      border-radius: 30px;
+      background-color: black;
+      color: aqua;
+      transition: all 0.5s linear;
+      &:hover {
+        border: 2px solid aqua;
+        color: black;
+        background-color: aqua;
+      }
+    }
+  }
+}

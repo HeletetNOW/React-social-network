@@ -1,0 +1,17 @@
+.nav {
+  width: 20%;
+  height: 1000px;
+  background-color: aqua;
+}
+.nav .inner {
+  padding: 40px 0 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.nav .inner .link {
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #000;
+  font-size: 30px;
+  padding: 15px 0;
+}

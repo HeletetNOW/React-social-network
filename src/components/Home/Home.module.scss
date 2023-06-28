@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+  width: 80%;
+  height: 1000px;
+  .title {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .img {
+    height: 300px;
+    width: 300px;
+    img {
+      animation: 5s linear 0s normal none infinite running rot;
+      width: 100%;
+    }
+  }
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
