@@ -6,6 +6,7 @@
 }
 
 .users {
+  position: relative;
   width: 80%;
 }
 
