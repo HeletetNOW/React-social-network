@@ -8,6 +8,7 @@ let initialState = {
 };
 
 alert("Yes");
+alert("Yes");
 
 const dialogsReducer = (state = initialState, action) => {
   switch (action.type) {
