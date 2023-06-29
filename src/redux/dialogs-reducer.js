@@ -7,6 +7,8 @@ let initialState = {
   newMessageText: "",
 };
 
+alert("Yes");
+
 const dialogsReducer = (state = initialState, action) => {
   switch (action.type) {
     case upgateMessage: {
