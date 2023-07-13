@@ -17,7 +17,7 @@ const App = (props) => {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/profile" element={<ProfileContainer />} />
+            <Route path="/profile/:userId?" element={<ProfileContainer />} />
             <Route path="/messages/*" element={<NavMessageContainer />} />
             <Route path="/users/*" element={<UsersContainer />} />
           </Routes>

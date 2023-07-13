@@ -1,8 +1,14 @@
 import Style from "./Profile.module.css";
 import React from "react";
 import Post from "./Post/Post";
+import Preloader from "../common/Preloader/Preloader";
 
 const Profile = (props) => {
+  debugger;
+
+  if (!props.profile) {
+    return <Preloader />;
+  }
   let posts = props.posts.map((p) => (
     <Post message={p.message} likeCount={p.likeCount} />
   ));
@@ -17,10 +23,10 @@ const Profile = (props) => {
     let text = newPostElement.current.value;
     props.onPostChange(text);
   };
-
   return (
     <div className={Style.profile}>
       <div className={Style.title}>ava+description</div>
+      <img src={props.profile.photos.large} alt="" />
       <div className={Style.posts}>
         <div className={Style.posts_title}>My posts</div>
         <textarea
