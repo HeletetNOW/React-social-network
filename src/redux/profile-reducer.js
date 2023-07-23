@@ -27,14 +27,13 @@ const profileReducer = (state = initialState, action) => {
       };
     }
     case SET_USERS_PROFILE: {
-      debugger;
       return { ...state, profile: action.profile };
     }
     default:
       return state;
   }
 };
-export const updateNewPostTextActionCreator = (text) => {
+export const onPostChange = (text) => {
   return { type: updateNewPostText, newText: text };
 };
 export const addPost = () => {

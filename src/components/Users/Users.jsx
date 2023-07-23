@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Style from "./Users.module.css";
 import React from "react";
 
@@ -58,7 +59,9 @@ const Users = (props) => {
           </div>
           <div className={Style.text}>
             <div className={Style.status}>
-              <div className={Style.name}>{u.name}</div>
+              <NavLink to={"/profile/" + u.id} className={Style.name}>
+                {u.name}
+              </NavLink>
               <div className={Style.subtitle}>{u.status}</div>
             </div>
             <div className={Style.location}>

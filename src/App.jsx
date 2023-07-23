@@ -1,4 +1,3 @@
-import Logo from "./components/Logo/Logo";
 import "./components/MainStyle/nullStyle.css";
 import "./components/MainStyle/MainStyle.css";
 import NavBar from "./components/NavBar/NavBar";
@@ -7,12 +6,13 @@ import Home from "./components/Home/Home";
 import NavMessageContainer from "./components/navMessage/navMessageContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import UsersContainer from "./components/Users/UsersContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
 
 const App = (props) => {
   return (
     <BrowserRouter>
       <div className="container">
-        <Logo />
+        <HeaderContainer />
         <div className="content">
           <NavBar />
           <Routes>

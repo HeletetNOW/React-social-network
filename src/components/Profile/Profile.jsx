@@ -4,8 +4,6 @@ import Post from "./Post/Post";
 import Preloader from "../common/Preloader/Preloader";
 
 const Profile = (props) => {
-  debugger;
-
   if (!props.profile) {
     return <Preloader />;
   }
